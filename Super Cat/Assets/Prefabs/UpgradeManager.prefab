@@ -25,6 +25,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.7919943, y: -1.3976861, z: 11.519531}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -47,6 +48,8 @@ MonoBehaviour:
   glovePrefab: {fileID: 150692, guid: 806e15773cb402c4a92bea5994d393c7, type: 2}
   hatPrefab: {fileID: 115318, guid: da5a3d888f6506e479518c8481dd6149, type: 2}
   tailPrefab: {fileID: 161412, guid: dd1c595cb04637b4c8048ee896679cf6, type: 2}
+  shieldPrefab: {fileID: 1000013659121488, guid: 1f8a72c7f606b6e449b8001f88a5f2cf,
+    type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

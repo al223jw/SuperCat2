@@ -33,9 +33,11 @@ public class Player : MonoBehaviour {
 
     public void DamagePlayer(int damage)
     {
-        stats.curHealth -= damage;
-
-        if (stats.curHealth <= 0)
+        if(GameMaster.gm.shieldState == true)
+        {
+            GameMaster.gm.shieldState = false;    
+        }
+        else
         {
             GameMaster.KillPlayer(this);
         }
@@ -45,6 +47,7 @@ public class Player : MonoBehaviour {
     {
         CoinBox _coinBox = _object.collider.GetComponent<CoinBox>();
         UpgradeBox _uppgradeBox = _object.collider.GetComponent<UpgradeBox>();
+        ShieldBox _shieldBox = _object.collider.GetComponent<ShieldBox>();
 
         if (_object.gameObject.tag == "CoinBox")
         {
@@ -54,6 +57,11 @@ public class Player : MonoBehaviour {
         if (_object.gameObject.tag == "UppgradeBox")
         {
             _uppgradeBox.GetUppgrade(_uppgradeBox);
+        }
+
+        if(_object.gameObject.tag == "shieldBox")
+        {
+            _shieldBox.GetShield(_shieldBox);
         }
 
         if (_object.gameObject.tag == "winIcon")

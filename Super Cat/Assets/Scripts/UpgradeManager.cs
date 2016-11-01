@@ -14,6 +14,7 @@ public class UpgradeManager : MonoBehaviour {
     public GameObject glovePrefab;
     public GameObject hatPrefab;
     public GameObject tailPrefab;
+    public GameObject shieldPrefab;
 
     private enum UPGRADE_TYPE {
         NONE,
@@ -31,6 +32,7 @@ public class UpgradeManager : MonoBehaviour {
     private Transform glovesSpawnpoint;
     private Transform hatSpawnpoint;
     private Transform tailSpawnpoint;
+    private Transform shieldSpawnpoint;
     
     private GameMaster gameMaster;
 
@@ -42,18 +44,32 @@ public class UpgradeManager : MonoBehaviour {
         capeSpawnpoint = body.GetChild(0);
         glovesSpawnpoint = body.GetChild(1);
         tailSpawnpoint = body.GetChild(2);
+        shieldSpawnpoint = body.GetChild(3);
 
         gameMaster = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
     }
-	
+
+    public GameObject shield;
+
 	// Update is called once per frame
 	void Update () {
+        if (gameMaster.shieldState == false)
+            Destroy(shield.gameObject);
 	}
 
     public void AddUpgrade()
     {
         currentUpgrade++;
         addUpgrade(currentUpgrade);
+    }
+
+    public void AddShield()
+    {
+        if(gameMaster.shieldState == true)
+        {
+            shield = Instantiate(shieldPrefab, shieldSpawnpoint.position, shieldSpawnpoint.rotation) as GameObject;
+            shield.transform.parent = body.gameObject.transform;
+        }
     }
 
     private void addUpgrade(UPGRADE_TYPE type)

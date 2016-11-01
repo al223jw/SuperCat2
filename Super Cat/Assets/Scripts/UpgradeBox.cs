@@ -10,17 +10,7 @@ public class UpgradeBox : MonoBehaviour {
    
     void Awake()
     {
-        
-        //    if(le == null)
-        //    {
-        //        le = GameObject.FindGameObjectWithTag("Head");
-        //        // headlessCat = transform.FindChild("Body").transform;
-
-        //        if (headlessCat == null)
-        //        {
-        //            Debug.LogError("System failure. (No body)");
-        //        }
-        //    }
+      
     }
 
     // Use this for initialization

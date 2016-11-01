@@ -18,6 +18,8 @@ TagManager:
   - Head
   - Body
   - winIcon
+  - shieldBox
+  - Shield
   layers:
   - Default
   - TransparentFX

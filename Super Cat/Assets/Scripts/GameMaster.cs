@@ -6,6 +6,7 @@ public class GameMaster : MonoBehaviour {
     public static GameMaster gm;
     public int coin = 0;
     public int uppgradeState = 0;
+    public bool shieldState = false;
 
     void Awake()
     {
@@ -68,6 +69,16 @@ public class GameMaster : MonoBehaviour {
     private void _GetCoin(CoinBox _coin)
     {
         coin++;
+    }
+
+    public static void GetShield(ShieldBox box)
+    {
+        gm._GetShield(box);
+    }
+
+    private void _GetShield(ShieldBox box)
+    {
+        shieldState = true;
     }
 
     public static void GetUppgrade(UpgradeBox uppgrade)

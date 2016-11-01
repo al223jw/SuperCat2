@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37356433, g: 0.38112015, b: 0.35887673, a: 1}
+  m_IndirectSpecularColor: {r: 0.37356448, g: 0.3811204, b: 0.35887685, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1167,8 +1167,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.3, y: -1.7}
-  m_SizeDelta: {x: 161, y: 56.8}
+  m_AnchoredPosition: {x: 8.4, y: -1.7}
+  m_SizeDelta: {x: 242.4, y: 85.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1028426677
 MonoBehaviour:

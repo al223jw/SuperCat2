@@ -1,10 +1,19 @@
 fileFormatVersion: 2
 guid: 212054fd6ec654c4984fa939c3fefd72
-timeCreated: 1463578627
+timeCreated: 1478013914
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - laserScript: {instanceID: 0}
+  - head: {instanceID: 0}
+  - body: {instanceID: 0}
+  - glassesPrefab: {instanceID: 0}
+  - capePrefab: {instanceID: 0}
+  - glovePrefab: {instanceID: 0}
+  - hatPrefab: {instanceID: 0}
+  - tailPrefab: {instanceID: 0}
+  - shield: {fileID: 114000011709197016, guid: 1f8a72c7f606b6e449b8001f88a5f2cf, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
