@@ -78,10 +78,6 @@ public class LaserEyes : MonoBehaviour {
         float size = Random.Range(0.6f, 0.9f);
         clone.localScale = new Vector3(size, size, size);
         Destroy(clone.gameObject, 0.02f);
-
-
-
-
     }
 
     private int Damage()

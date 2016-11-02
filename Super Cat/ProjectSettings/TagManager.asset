@@ -20,6 +20,8 @@ TagManager:
   - winIcon
   - shieldBox
   - Shield
+  - Bullet
+  - Explosion
   layers:
   - Default
   - TransparentFX

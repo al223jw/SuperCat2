@@ -69,6 +69,10 @@ public class UpgradeManager : MonoBehaviour {
         {
             shield = Instantiate(shieldPrefab, shieldSpawnpoint.position, shieldSpawnpoint.rotation) as GameObject;
             shield.transform.parent = body.gameObject.transform;
+
+            Vector3 scale = shield.transform.localScale;
+            scale.x *= Math.Sign(body.transform.localScale.x);
+            shield.transform.localScale = scale;
         }
     }
 

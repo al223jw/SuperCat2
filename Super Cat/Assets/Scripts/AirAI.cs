@@ -43,6 +43,16 @@ public class AirAI : MonoBehaviour {
     private IEnumerator SearchForTarget()
     {
         GameObject sResult = GameObject.FindGameObjectWithTag("AirTarget");
+
+        if (GameObject.FindGameObjectWithTag("Bullet"))
+        {
+            sResult = GameObject.FindGameObjectWithTag("Player");
+        }
+        else
+        {
+            sResult = GameObject.FindGameObjectWithTag("AirTarget");
+        }
+
         if (sResult == null)
         {
             yield return new WaitForSeconds(0.5f);
@@ -120,6 +130,7 @@ public class AirAI : MonoBehaviour {
         if (dist < nextWaypointDistance)
         {
             currentWaypoint++;
+            return;
         }
     }
 }

@@ -7,6 +7,7 @@ public class GameMaster : MonoBehaviour {
     public int coin = 0;
     public int uppgradeState = 0;
     public bool shieldState = false;
+    private float deleteExplosions = 2f;
 
     void Awake()
     {
@@ -20,6 +21,7 @@ public class GameMaster : MonoBehaviour {
     public Transform spawnPoint;
     public float spawnDelay = 1;
     public Transform hitPrefab;
+    public Transform bossKillPrefab;
 
     [SerializeField]
     private GameObject gameOverUI;
@@ -61,6 +63,18 @@ public class GameMaster : MonoBehaviour {
         Instantiate(hitPrefab, enemy.transform.position, enemy.transform.rotation);
     }
 
+    public static void KillBoss(Boss boss)
+    {
+        gm._KillBoss(boss);
+    }
+
+    private void _KillBoss(Boss boss)
+    {
+        Destroy(boss.gameObject);
+        Instantiate(bossKillPrefab, boss.transform.position, boss.transform.rotation);
+    }
+
+
     public static void GetCoin(CoinBox coin)
     {
         gm._GetCoin(coin);
@@ -90,4 +104,15 @@ public class GameMaster : MonoBehaviour {
     {
         uppgradeState++; 
     } 
+
+    void Update()
+    {
+        deleteExplosions -= Time.deltaTime;
+        if(deleteExplosions <= 0f)
+        {
+            deleteExplosions = 2f;
+            GameObject explosion = GameObject.FindGameObjectWithTag("Explosion");
+            Destroy(explosion.gameObject);
+        }
+    }
 }

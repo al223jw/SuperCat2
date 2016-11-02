@@ -20,8 +20,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000012384562118}
   - 212: {fileID: 212000011928342550}
-  - 114: {fileID: 114000012724631558}
-  - 114: {fileID: 114000011709197016}
   m_Layer: 0
   m_Name: Shield
   m_TagString: Shield
@@ -42,34 +40,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &114000011709197016
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013659121488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f5bf00589487f24b87711eb5b906007, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 11489096, guid: c9e8ad685c478a84a8291b826d85d47d, type: 2}
-  body: {fileID: 431642, guid: a7f13edf159b5fb46bb2c8f0607446af, type: 2}
-  shieldPrefab: {fileID: 1000013659121488}
-  shieldSpawnpoint: {fileID: 431642, guid: a7f13edf159b5fb46bb2c8f0607446af, type: 2}
-  shield: {fileID: 1000013659121488}
-  player: {fileID: 11481856, guid: a7f13edf159b5fb46bb2c8f0607446af, type: 2}
---- !u!114 &114000012724631558
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013659121488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212000011928342550
 SpriteRenderer:
   m_ObjectHideFlags: 1
