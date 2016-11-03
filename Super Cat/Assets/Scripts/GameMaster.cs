@@ -112,7 +112,10 @@ public class GameMaster : MonoBehaviour {
         {
             deleteExplosions = 2f;
             GameObject explosion = GameObject.FindGameObjectWithTag("Explosion");
-            Destroy(explosion.gameObject);
+            if(explosion != null)
+            { 
+                Destroy(explosion.gameObject);
+            }
         }
     }
 }

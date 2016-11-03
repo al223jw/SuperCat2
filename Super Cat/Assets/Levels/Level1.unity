@@ -764,7 +764,7 @@ Prefab:
     - target: {fileID: 11488002, guid: ec068eb21cb273b4f8ec0e14b01184c2, type: 2}
       propertyPath: upgradeScript
       value: 
-      objectReference: {fileID: 1174332827}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ec068eb21cb273b4f8ec0e14b01184c2, type: 2}
   m_IsPrefabParent: 0
@@ -1971,7 +1971,7 @@ Prefab:
     - target: {fileID: 11488002, guid: ec068eb21cb273b4f8ec0e14b01184c2, type: 2}
       propertyPath: upgradeScript
       value: 
-      objectReference: {fileID: 1174332827}
+      objectReference: {fileID: 0}
     - target: {fileID: 103636, guid: ec068eb21cb273b4f8ec0e14b01184c2, type: 2}
       propertyPath: m_Layer
       value: 18
@@ -2841,12 +2841,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!114 &1174332827 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11442976, guid: c9e8ad685c478a84a8291b826d85d47d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1350323100}
-  m_Script: {fileID: 11500000, guid: 212054fd6ec654c4984fa939c3fefd72, type: 3}
 --- !u!1001 &1193963779
 Prefab:
   m_ObjectHideFlags: 0
@@ -3479,30 +3473,29 @@ Prefab:
       propertyPath: gameOverUI
       value: 
       objectReference: {fileID: 1150081111}
-    - target: {fileID: 11424616, guid: c9e8ad685c478a84a8291b826d85d47d, type: 2}
-      propertyPath: backgrounds.Array.data[0]
-      value: 
-      objectReference: {fileID: 1666398872}
-    - target: {fileID: 11442976, guid: c9e8ad685c478a84a8291b826d85d47d, type: 2}
-      propertyPath: laserScript
-      value: 
-      objectReference: {fileID: 845558013}
-    - target: {fileID: 11442976, guid: c9e8ad685c478a84a8291b826d85d47d, type: 2}
-      propertyPath: head
-      value: 
-      objectReference: {fileID: 845558012}
-    - target: {fileID: 11442976, guid: c9e8ad685c478a84a8291b826d85d47d, type: 2}
-      propertyPath: body
-      value: 
-      objectReference: {fileID: 1435079193}
     - target: {fileID: 11489096, guid: c9e8ad685c478a84a8291b826d85d47d, type: 2}
       propertyPath: winLevel
       value: 
       objectReference: {fileID: 568901542}
-    - target: {fileID: 11489096, guid: c9e8ad685c478a84a8291b826d85d47d, type: 2}
-      propertyPath: hitPrefab
+    - target: {fileID: 11424616, guid: c9e8ad685c478a84a8291b826d85d47d, type: 2}
+      propertyPath: backgrounds.Array.data[0]
       value: 
-      objectReference: {fileID: 400010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 2}
+      objectReference: {fileID: 1666398872}
+    - target: {fileID: 114000010165599188, guid: c9e8ad685c478a84a8291b826d85d47d,
+        type: 2}
+      propertyPath: laserScript
+      value: 
+      objectReference: {fileID: 845558013}
+    - target: {fileID: 114000010165599188, guid: c9e8ad685c478a84a8291b826d85d47d,
+        type: 2}
+      propertyPath: head
+      value: 
+      objectReference: {fileID: 845558012}
+    - target: {fileID: 114000010165599188, guid: c9e8ad685c478a84a8291b826d85d47d,
+        type: 2}
+      propertyPath: body
+      value: 
+      objectReference: {fileID: 1435079193}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c9e8ad685c478a84a8291b826d85d47d, type: 2}
   m_IsPrefabParent: 0

@@ -44,13 +44,9 @@ public class AirAI : MonoBehaviour {
     {
         GameObject sResult = GameObject.FindGameObjectWithTag("AirTarget");
 
-        if (GameObject.FindGameObjectWithTag("Bullet"))
+        if (GameObject.FindGameObjectWithTag("Bullet")) // if it is a bullet the taget is the Player.
         {
             sResult = GameObject.FindGameObjectWithTag("Player");
-        }
-        else
-        {
-            sResult = GameObject.FindGameObjectWithTag("AirTarget");
         }
 
         if (sResult == null)

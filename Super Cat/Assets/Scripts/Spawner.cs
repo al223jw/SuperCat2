@@ -85,14 +85,11 @@ public class Spawner : MonoBehaviour {
         if(searchCountdown <= 0f)
         {
             searchCountdown = 1f;
-            Debug.LogError("JA");
             if (GameObject.FindGameObjectsWithTag("Bullet").Length == 0)
             {
-                Debug.LogError("JASS");
                 return false;
             }
         }
-        Debug.LogError("NOPE");
         return true;
     }
 

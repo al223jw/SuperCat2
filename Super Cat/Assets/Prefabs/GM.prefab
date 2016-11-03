@@ -11,7 +11,7 @@ GameObject:
   - 114: {fileID: 11489096}
   - 114: {fileID: 11424616}
   - 212: {fileID: 21255950}
-  - 114: {fileID: 114000011907043828}
+  - 114: {fileID: 114000010495757874}
   m_Layer: 0
   m_Name: GM
   m_TagString: GM
@@ -31,22 +31,6 @@ GameObject:
   m_Name: SpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &181266
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 488984}
-  - 114: {fileID: 11442976}
-  m_Layer: 0
-  m_Name: UpgradeManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -75,22 +59,9 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 412094}
-  - {fileID: 488984}
+  - {fileID: 4000014212082530}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!4 &488984
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 181266}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.7919943, y: -1.3976861, z: 11.519531}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 415374}
-  m_RootOrder: 1
 --- !u!114 &11424616
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -105,28 +76,6 @@ MonoBehaviour:
   backgrounds:
   - {fileID: 0}
   smoothing: 1
---- !u!114 &11442976
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 181266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 212054fd6ec654c4984fa939c3fefd72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  laserScript: {fileID: 0}
-  head: {fileID: 0}
-  body: {fileID: 0}
-  glassesPrefab: {fileID: 114892, guid: 74060b21201a0344d89b10f5831f4903, type: 2}
-  capePrefab: {fileID: 148942, guid: 07f371ccc67761545a12d352f8fbb466, type: 2}
-  glovePrefab: {fileID: 150692, guid: 806e15773cb402c4a92bea5994d393c7, type: 2}
-  hatPrefab: {fileID: 115318, guid: da5a3d888f6506e479518c8481dd6149, type: 2}
-  tailPrefab: {fileID: 161412, guid: dd1c595cb04637b4c8048ee896679cf6, type: 2}
-  shieldPrefab: {fileID: 1000013659121488, guid: 1f8a72c7f606b6e449b8001f88a5f2cf,
-    type: 2}
-  shield: {fileID: 0}
 --- !u!114 &11489096
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -141,11 +90,12 @@ MonoBehaviour:
   coin: 0
   uppgradeState: 0
   shieldState: 0
-  playerPrefab: {fileID: 431642, guid: a7f13edf159b5fb46bb2c8f0607446af, type: 2}
+  playerPrefab: {fileID: 0}
   spawnPoint: {fileID: 412094}
   spawnDelay: 1
   hitPrefab: {fileID: 400010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 2}
-  bossKillPrefab: {fileID: 400010, guid: 031d08f52af1daa4f929b85221519426, type: 2}
+  bossKillPrefab: {fileID: 4000010789647882, guid: 31c7d4ffd4caecc4c8dcd6f5cc4e67e0,
+    type: 2}
   gameOverUI: {fileID: 0}
   winLevel: {fileID: 0}
 --- !u!212 &21255950
@@ -192,13 +142,64 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 127536}
   m_IsPrefabParent: 1
---- !u!114 &114000011907043828
+--- !u!1 &1000013453712336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000014212082530}
+  - 114: {fileID: 114000010165599188}
+  m_Layer: 0
+  m_Name: UpgradeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000014212082530
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013453712336}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.7919943, y: -1.3976861, z: 11.519531}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 415374}
+  m_RootOrder: 1
+--- !u!114 &114000010165599188
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013453712336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 212054fd6ec654c4984fa939c3fefd72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserScript: {fileID: 0}
+  head: {fileID: 0}
+  body: {fileID: 0}
+  glassesPrefab: {fileID: 114892, guid: 74060b21201a0344d89b10f5831f4903, type: 2}
+  capePrefab: {fileID: 148942, guid: 07f371ccc67761545a12d352f8fbb466, type: 2}
+  glovePrefab: {fileID: 150692, guid: 806e15773cb402c4a92bea5994d393c7, type: 2}
+  hatPrefab: {fileID: 115318, guid: da5a3d888f6506e479518c8481dd6149, type: 2}
+  tailPrefab: {fileID: 161412, guid: dd1c595cb04637b4c8048ee896679cf6, type: 2}
+  shieldPrefab: {fileID: 1000013659121488, guid: 1f8a72c7f606b6e449b8001f88a5f2cf,
+    type: 2}
+  shield: {fileID: 1000013659121488, guid: 1f8a72c7f606b6e449b8001f88a5f2cf, type: 2}
+--- !u!114 &114000010495757874
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 127536}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 61b500140be873a49a78edeaff469fed, type: 3}
   m_Name: 
@@ -210,20 +211,25 @@ MonoBehaviour:
     rate: 1
   - name: Medium
     bullet: {fileID: 4000012917900570, guid: 0e3e4ad8701c5d749afa72a3ff06e3ff, type: 2}
-    count: 8
+    count: 7
     rate: 1.5
   - name: Hard
     bullet: {fileID: 4000012917900570, guid: 0e3e4ad8701c5d749afa72a3ff06e3ff, type: 2}
-    count: 12
+    count: 10
     rate: 2
-  - name: WHY?
+  - name: Insane
+    bullet: {fileID: 4000012917900570, guid: 0e3e4ad8701c5d749afa72a3ff06e3ff, type: 2}
+    count: 15
+    rate: 2
+  - name: HELP!
     bullet: {fileID: 4000012917900570, guid: 0e3e4ad8701c5d749afa72a3ff06e3ff, type: 2}
     count: 20
     rate: 3
-  - name: Nope.
+  - name: Nope..
     bullet: {fileID: 4000012917900570, guid: 0e3e4ad8701c5d749afa72a3ff06e3ff, type: 2}
     count: 30
     rate: 3
   Spawnpoints:
   - {fileID: 0}
   timeBetweenWaves: 5
+  waveCountdown: 0
